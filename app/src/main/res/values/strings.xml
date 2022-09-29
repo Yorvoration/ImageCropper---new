@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IMAGE CROPPER</string>
+    <string name="comImageCroppers">com.sunayanpradhan.imagecropper"+".provider</string>
+    <string name="select_image">SELECT IMAGE</string>
 </resources>

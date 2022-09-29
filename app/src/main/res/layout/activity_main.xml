@@ -3,9 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <data>
-
-    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,15 +11,15 @@
 
         <TextView
             android:id="@+id/select_toast"
-            android:text="SELECT IMAGE"
+            android:text="@string/select_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/camera_layout"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:textSize="25dp"
-            android:textColor="@color/black">
+            android:textSize="25sp"
+            android:textColor="@color/teal_200">
 
         </TextView>
 
@@ -36,7 +33,8 @@
             android:id="@+id/image"
             android:scaleType="fitXY"
             android:adjustViewBounds="true"
-            android:visibility="gone" />
+            android:visibility="gone"
+            tools:ignore="ContentDescription" />
 
         <LinearLayout
             android:id="@+id/camera_layout"
@@ -56,9 +54,8 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:layout_margin="20dp"
-                android:visibility="gone">
-
-            </ImageView>
+                android:visibility="gone"
+                tools:ignore="ContentDescription"/>
 
 
             <ImageView
@@ -66,18 +63,16 @@
                 android:src="@drawable/ic_round_photo_camera_24"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
-                android:layout_margin="20dp">
-
-            </ImageView>
+                android:layout_margin="20dp"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:id="@+id/gallery"
                 android:src="@drawable/ic_round_collections_24"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
-                android:layout_margin="20dp">
-
-            </ImageView>
+                android:layout_margin="20dp"
+                tools:ignore="ContentDescription"/>
 
             <ImageView
                 android:id="@+id/save"
@@ -85,9 +80,8 @@
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:layout_margin="20dp"
-                android:visibility="gone">
-
-            </ImageView>
+                android:visibility="gone"
+                tools:ignore="ContentDescription"/>
 
         </LinearLayout>
 
